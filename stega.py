@@ -51,7 +51,7 @@ if __name__ == '__main__':
             n = n + 1
             m = m + 1
             m = (m + 1) % 3  # this is for every value of z , remainder will be between 0,1,2 . i.e G,R,B plane will be set automatically.
-            # whatever be the value of z , z=(z+1)%3 will always between 0,1,2 . The same concept is used for random number in dice and card games.
+            # whatever be the value of z , z=(z+1)%3 will always between 0,1,2 .
             kl = (kl + 1) % len(key)
 
         cv2.imwrite("encrypted_img.jpg", x)
